@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photographer Cards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Skeleton Loader -->
+  <div class="container" id="skeleton">
+    <!-- Page Title Skeleton -->
+    <div class="page-title" style="height: 60px; background: rgba(255,255,255,0.1); border-radius: 10px; margin-bottom: 20px;"></div>
+
+    <!-- Skeleton grid -->
+    <div class="tab-pane active">
+      <div class="wide-card skeleton-card"></div>
+      <div class="wide-card skeleton-card"></div>
+      <div class="wide-card skeleton-card"></div>
+    </div>
+  </div>
+
+  <!-- Real Content -->
+  <div class="container hidden" id="content">
+<!-- Page Title -->
+  <div class="page-title">Rangat Films</div>
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" onclick="openTab(event,'home')">Home</button>
+      <button class="tab" onclick="openTab(event,'about')">About</button>
+    </div>
+
+    <!-- Tabs Content -->
+    <div class="tab-content">
+      <!-- Home Tab -->
+      <div id="home" class="tab-pane active">
+        <div class="wide-card glass">
+          <video autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+          </video>
+          <span class="title">Instagram</span>
+        </div>
+        <div class="wide-card glass">
+          <video autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+          </video>
+          <span class="title">YouTube</span>
+        </div>
+        <div class="wide-card glass">
+          <video autoplay muted loop playsinline>
+            <source src="video.mp4" type="video/mp4">
+          </video>
+          <span class="title">Website</span>
+        </div>
+      </div>
+
+      <!-- About Tab -->
+      <div id="about" class="tab-pane">
+        <div class="about-note">
+          <p>Hello! 📸<br>
+          I’m so glad you’re here. Photography is my way of freezing moments,  
+          capturing smiles, and turning tiny memories into forever keepsakes.  
+          Thank you for letting me share a little magic with you!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
